@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Menggunakan ethernet", Toast.LENGTH_SHORT).show()
                 return true
             }
+        } else {
+            Toast.makeText(this, "Tidak terhubung dengan internet", Toast.LENGTH_SHORT).show()
+            return false
         }
         return false
     }
